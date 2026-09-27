@@ -1,63 +1,145 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Simple HTML Page</title>
-<style>
-:root{ --bg:#f7fafc; --card:#ffffff; --accent:#2563eb; --muted:#6b7280; }
-body{ font-family:Inter, system-ui, -apple-system,Segoe UI, Roboto, "Helvetica Neue", Arial; margin:0; background:var(--bg); color:#111827; }
-.container{ max-width:900px; margin:48px auto; padding:24px; }
-header{ display:flex; align-items:center; justify-content:space-between; gap:16px; }
-h1{ margin:0; font-size:1.5rem; }
-nav a{ margin-left:12px; text-decoration:none; color:var(--muted); font-size:0.95rem }
-.card{ background:var(--card); border-radius:12px; padding:18px; box-shadow:0 6px 18px rgba(16,24,40,0.06); }
-.actions{ margin-top:16px; display:flex; gap:8px }
-button{ border:0; padding:10px 14px; border-radius:8px; cursor:pointer; font-weight:600 }
-.btn-primary{ background:var(--accent); color:#fff }
-.btn-ghost{ background:transparent; color:var(--muted) }
-footer{ margin-top:28px; text-align:center; color:var(--muted); font-size:0.9rem }
-pre{ background:#0f172a; color:#e6eef8; padding:12px; border-radius:8px; overflow:auto }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Створити сайт із FAQ (відповіді на популярні питання)</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2563eb;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .faq {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq h2 {
+            color: #2563eb;
+            font-size: 21px;
+            margin-top: 0;
+        }
+
+        .faq p {
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #1e293b;
+            color: white;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-<div class="container">
+
 <header>
-<h1>My Simple Page</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
+    <h1>FAQ — Створення та публікація веб-сайту</h1>
+    <p>Відповіді на популярні питання</p>
 </header>
-<main style="margin-top:18px">
-<section class="card">
-<h2 id="welcome">Welcome!</h2>
-<p style="color:var(--muted)">This is a minimal HTML page with a bit of styling and a small script. Use it as a starter template.</p>
-<div class="actions">
-<button class="btn-primary" id="greetBtn">Greet me</button>
-<button class="btn-ghost" id="showCode">Show HTML sample</button>
-</div>
-<div id="output" style="margin-top:14px"></div>
-</section>
 
-<section class="card" style="margin-top:18px">
-<h3 id="about">About this page</h3>
-<p style="color:var(--muted)">Built with semantic HTML, a tiny CSS block, and a few lines of JavaScript that demonstrate interactivity without frameworks.</p>
-</section>
+<main>
 
-<section class="card" style="margin-top:18px">
-<h3 id="contact">Contact</h3>
-<p style="color:var(--muted)">Want changes? Edit the HTML directly or ask me to customize it for you.</p>
-<pre id="codePreview" style="display:none">&lt;!-- example: put your snippet here --&gt;&#10;&lt;p&gt;Hello world&lt;/p&gt;</pre>
-</section>
+    <div class="faq">
+        <h2>1. Що таке хостинг і для чого він потрібен?</h2>
+        <p>
+            Хостинг — це послуга, яка надає місце на сервері для зберігання
+            файлів веб-сайту. Завдяки хостингу користувачі можуть відкривати
+            сайт через Інтернет.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>2. Яке призначення має доменне ім’я?</h2>
+        <p>
+            Доменне ім’я — це унікальна адреса веб-сайту в Інтернеті.
+            Воно потрібне для того, щоб користувачам було легко знаходити
+            та відкривати сайт, наприклад: example.com.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>3. Що таке файл index.html?</h2>
+        <p>
+            index.html — це основний HTML-файл веб-сайту. Зазвичай саме цей
+            файл відкривається сервером першим, коли користувач переходить
+            на головну сторінку сайту.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>4. Які етапи створення веб-сайту ви знаєте?</h2>
+        <p>
+            Основні етапи: планування структури сайту, створення дизайну,
+            написання HTML, CSS та JavaScript-коду, додавання інформації,
+            тестування, розміщення сайту на хостингу та перевірка його роботи.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>5. Які безкоштовні сервіси хостингу існують?</h2>
+        <p>
+            Прикладами безкоштовних сервісів для розміщення веб-сайтів є
+            GitHub Pages, Netlify та Vercel. Вони дозволяють опублікувати
+            статичні веб-сайти без оплати за базове розміщення.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>6. У чому полягає інформаційне наповнення сайту?</h2>
+        <p>
+            Інформаційне наповнення — це додавання на сайт текстів,
+            зображень, відео, посилань та інших матеріалів, які потрібні
+            для представлення інформації відвідувачам.
+        </p>
+    </div>
+
+    <div class="faq">
+        <h2>7. Як перевірити, що сайт успішно опублікований?</h2>
+        <p>
+            Потрібно відкрити адресу сайту в браузері та перевірити,
+            чи завантажується сторінка без помилок. Також варто перевірити,
+            чи правильно відображаються текст, зображення, посилання та інші
+            елементи сайту.
+        </p>
+    </div>
+
 </main>
 
 <footer>
-<small>Generated: <span id="now"></span></small>
+    <p>© 2026 FAQ — Створення веб-сайту</p>
 </footer>
-</div>
 
-<script>
-
-
+</body>
+</html>
